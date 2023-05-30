@@ -1,6 +1,6 @@
-# contador
+# Contador de Pessoas
 
-A new Flutter project.
+Trata-se de um aplicativo móvel para a contagem de pessoas em um estabelecimento
 
 ## Getting Started
 

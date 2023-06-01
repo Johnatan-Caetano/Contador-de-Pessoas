@@ -57,11 +57,11 @@ class _HomePageState extends State<HomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            isFull? 'Lotado' : 'Pode entrar!',
+            isFull? 'Lotado' : isEmpty? 'Vazio' : 'Pode entrar!',
             style: TextStyle(
-              fontSize: 30,
-              color: Colors.white,
+              color:isFull? Colors.red : isEmpty? Colors.blue : Colors.white,
               fontWeight: FontWeight.w700,
+              fontSize: 30,
             ),
           ),
           SizedBox(height: 32,),
@@ -69,7 +69,7 @@ class _HomePageState extends State<HomePage> {
             '$count',
             style: TextStyle(
               fontSize: 100,
-              color: Colors.white,
+              color:isFull? Colors.red : isEmpty? Colors.blue : Colors.white,
             ),
           ),
            SizedBox(height: 70,),
